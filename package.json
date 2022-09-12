@@ -1,0 +1,23 @@
+{
+  "name": "smplrchess",
+  "package-name": "smplrchess",
+  "app-name": "SmplrChess",
+  "project-type": "webview",
+  "icon": "./assets/icon/icon.png",
+  "version": "1.0.0",
+  "description": "A Smplr way to play Chess.",
+  "main": "main.js",
+  "permission": ["android.permission.INTERNET"],
+  "scripts": {
+    "test": "node main.js",
+    "build": "androidjs build --release"
+  },
+  "dist-path": "./dist",
+  "author": "ZombieNW",
+  "license": "ISC",
+  "dependencies": {
+    "androidjs": "^1.0.0",
+    "left-pad": "^1.3.0",
+    "socket.io": "^2.2.0"
+  }
+}

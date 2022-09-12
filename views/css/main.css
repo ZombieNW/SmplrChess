@@ -1,0 +1,166 @@
+@font-face {
+    font-family: rajdhani;
+    src: url(../assets/rajdhani.ttf);
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: rajdhani;
+    background-color: #1a1a1a;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.boardholder{
+    height: 100%;
+    width: 100%;
+}
+
+#myBoard {
+    width: 95vw;
+    max-width: 80vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #0a0a0a;
+}
+
+.topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    float: left;
+    background-color: #554994;
+    color: white;
+}
+
+.highlight-hint {
+    box-shadow: inset 0 0 0 3px #554994;
+}
+
+.no-underline {
+    text-decoration: none;
+}
+
+.no-outline:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-header {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.splash{
+    font-size: 6vw;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #554994;
+    color: white;
+    z-index: 2;
+    text-align: center;
+}
+
+.splash.display-none{
+    font-size: 6vw;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background-color: #554994;
+    z-index: -10;
+    color: white;
+    z-index: 2;
+    text-align: center;
+}
+
+@keyframes fadeIn{
+    to{
+        opacity: 1;
+    }
+}
+
+.fade-in{
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 15vh; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    font-size: 18pt;
+}
+
+.closemodal {
+    color: #aaaaaa;
+    float: right;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.closemodal:hover,
+.closemodal:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #0a0a0a;
+    color: white;
+    text-align: center;
+ }
