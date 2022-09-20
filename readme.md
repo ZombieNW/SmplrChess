@@ -21,5 +21,5 @@ Install [Node.js](https://nodejs.org/)
 Then just install the dependencies and start.
 ```sh
 npm install
-node index.js
+npm run build
 ```
