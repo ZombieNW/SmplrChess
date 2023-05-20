@@ -655,9 +655,13 @@ function onSnapEnd() {
 //app code
 var modal = document.getElementById("modal");
 var btn = document.getElementById("openmodal");
+var rstbtn = document.getElementById("restart");
 var span = document.getElementsByClassName("closemodal")[0];
 btn.onclick = function() {
   modal.style.display = "block";
+}
+rstbtn.onclick = function() {
+  reset();
 }
 span.onclick = function() {
   modal.style.display = "none";

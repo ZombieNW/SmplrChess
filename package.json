@@ -3,11 +3,20 @@
   "package-name": "smplrchess",
   "app-name": "SmplrChess",
   "project-type": "webview",
+  "screenOrientation": "portrait",
   "icon": "./assets/icon/icon.png",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A Smplr way to play Chess.",
   "main": "main.js",
-  "permission": ["android.permission.INTERNET"],
+  "permission": [
+    "android.permission.INTERNET"
+  ],
+  "theme": {
+    "fullScreen": false,
+    "colorAccent": "#554994",
+    "colorPrimary": "#554994",
+    "colorPrimaryDark": "#0a0a0a"
+  },
   "scripts": {
     "test": "node main.js",
     "build": "androidjs build --release"
@@ -16,7 +25,7 @@
   "author": "ZombieNW",
   "license": "ISC",
   "dependencies": {
-    "androidjs": "^1.0.0",
+    "androidjs": "^1.0.12",
     "left-pad": "^1.3.0",
     "socket.io": "^2.2.0"
   }

@@ -20,6 +20,8 @@ In case you want to contribute, here you go.
 Install [Node.js](https://nodejs.org/)
 Then just install the dependencies and start.
 ```sh
+npm install androidjs
+npm install -g androidjs-builder
 npm install
 npm run build
 ```
